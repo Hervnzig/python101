@@ -1,3 +1,4 @@
+import json
 # def txt_file_to_dict(txt_file):
 #     studentData = {}
 #     studentHandler = st.open_file(txt_file)
@@ -13,27 +14,7 @@
 #     return studentData
 
 
-original_file = open("final_students.txt", 'r')
-data_dict = {}
-def txt_to_dict(original_f):
-    for line in original_file:
-        sub_dictionary = {}
-        stud_info = line.strip().split(",")
-        stud_id = int(stud_info[0].split(":")[1])
 
-        for sub_section in stud_info:
-            info = sub_section.strip().split(":")
-            sub_dictionary[info[0]]= info[1]
-        
-        data_dict[stud_id] = sub_dictionary
-
-    
-    original_file.close
-    # return data_dict
-    print(data_dict)
-
-
-txt_to_dict(original_file)
 
 # dictionary = {}
 # with open("final_students.txt") as file:
