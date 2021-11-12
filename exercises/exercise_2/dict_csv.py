@@ -11,7 +11,7 @@ import csv
 with open('exercises/exercise_2/data.json') as json_file:
     data = json.load(json_file)
 
-employee_data = data
+student_data = data
 
 # now we will open a file for writing
 data_file = open('exercises/exercise_2/data_file.csv', 'w')
@@ -23,15 +23,15 @@ csv_writer = csv.writer(data_file)
 # headers to the CSV file
 count = 0
 
-for emp in employee_data:
+for student in student_data:
     if count == 0:
 
         # Writing headers of CSV file
-        header = emp.keys()
+        header = student.keys()
         csv_writer.writerow(header)
         count += 1
 
     # Writing data of CSV file
-    csv_writer.writerow(emp.values())
+    csv_writer.writerow(student.values())
 
 data_file.close()

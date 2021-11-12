@@ -1,4 +1,15 @@
+# Python program to convert
+
 import xml.etree.ElementTree as Et
+import json
+
+
+# Opening JSON file and loading the data
+# into the variable data
+with open('exercises/exercise_2/data.json') as json_file:
+    data = json.load(json_file)
+
+student_data = data
 
 
 def dict_to_xml(root, tag, dict_data):
@@ -20,26 +31,7 @@ def dict_to_xml(root, tag, dict_data):
 
 def print_result():
 
-    data = [
-        {
-            "id": "001",
-            "firstname": "Eric",
-            "lastname": "Smith",
-            "password": "Her#001ksc"
-        },
-        {
-            "id": "002",
-            "firstname": "Alice",
-            "lastname": "Brown",
-            "password": "H4rv#87902749#"
-        },
-        {
-            "id": "003",
-            "firstname": "Robert",
-            "lastname": "Rock",
-            "password": "ryAn978#582"
-        }
-    ]
+    data = student_data
 
     root = 'Students'
     tag = 'Student'
