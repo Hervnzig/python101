@@ -14,16 +14,14 @@ import json
 #     return studentData
 
 
-
-
 # dictionary = {}
 # with open("final_students.txt") as file:
 #  for line in file:
- 
+
 #     (key, value) = line.split()
- 
+
 #     dictionary[int(key)] = value
- 
+
 # print ('\ntext file to dictionary=\n',dictionary)
 
 
@@ -32,7 +30,7 @@ import json
 # for line in myfile:
 #     k, v = line.strip().split(',')
 #     data_dict[k.strip()] = v.strip()
- 
+
 # myfile.close()
- 
+
 # print(' text file to dictionary =\n ',data_dict)

@@ -1,7 +1,7 @@
 import re
 
-initial_students_file = 'students.txt'
-final_students = 'final_students.txt'
+initial_students_file = 'exercises/exercise_1/students.txt'
+final_students = 'exercises/exercise_1/final_students.txt'
 no_trials = [0]
 
 try:
